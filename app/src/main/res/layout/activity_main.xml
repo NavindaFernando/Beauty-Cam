@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/pink"
+    >
+
+    <RelativeLayout
+        android:layout_width="354dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintVertical_bias="0.458">
+
+        <TextView
+            android:id="@+id/text_view_total_price"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:text="Total Price"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/text_view_total_price"
+            android:layout_alignLeft="@+id/text_view_total_price"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="14dp"
+            android:text="$0"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_checkout"
+            android:layout_width="146dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_buttton_red"
+            android:text="Checkout"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:backgroundTint="#FF4848" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="354dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <Button
+            android:id="@+id/button_min_black_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/text_view_price_black_camara"
+            android:layout_toRightOf="@+id/text_view_price_black_camara"
+            android:background="@drawable/round_button"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED" />
+
+        <TextView
+            android:id="@+id/text_view_price_black_camara"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_country_black_camara"
+            android:layout_alignStart="@+id/text_view_country_black_camara"
+            android:layout_alignLeft="@+id/text_view_country_black_camara"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="$350"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_max_black_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED" />
+
+        <TextView
+            android:id="@+id/text_view_qty_black_camara"
+            android:layout_width="39dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@+id/button_max_black_camara"
+            android:layout_toLeftOf="@+id/button_max_black_camara"
+            android:layout_toEndOf="@+id/button_min_black_camara"
+            android:layout_toRightOf="@+id/button_max_black_camara"
+            android:text="    0"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_view_black_camara"
+            android:layout_width="91dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_image_view_black"
+            app:srcCompat="@drawable/camara_4" />
+
+        <TextView
+            android:id="@+id/text_View_black_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/image_view_black_camara"
+            android:layout_toRightOf="@+id/image_view_black_camara"
+            android:layout_weight="1"
+            android:text="Beauti Camara"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_country_black_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_View_black_camara"
+            android:layout_alignStart="@+id/text_View_black_camara"
+            android:layout_alignLeft="@+id/text_View_black_camara"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="Japan"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="354dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <Button
+            android:id="@+id/button_min_pink_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/text_view_price_pink_camara"
+            android:layout_toRightOf="@+id/text_view_price_pink_camara"
+            android:background="@drawable/round_button"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED" />
+
+        <TextView
+            android:id="@+id/text_view_price_pink_camara"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_country_pink_camara"
+            android:layout_alignStart="@+id/text_view_country_pink_camara"
+            android:layout_alignLeft="@+id/text_view_country_pink_camara"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="$290"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_max_pink_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED" />
+
+        <TextView
+            android:id="@+id/text_view_qty_pink_camara"
+            android:layout_width="39dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@+id/button_max_pink_camara"
+            android:layout_toLeftOf="@+id/button_max_pink_camara"
+            android:layout_toEndOf="@+id/button_min_pink_camara"
+            android:layout_toRightOf="@+id/button_min_pink_camara"
+            android:text="    0"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_view_pink_camara"
+            android:layout_width="91dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_image_view_pink"
+            app:srcCompat="@drawable/camara_3" />
+
+        <TextView
+            android:id="@+id/text_View_pink_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/image_view_pink_camara"
+            android:layout_toRightOf="@+id/image_view_pink_camara"
+            android:layout_weight="1"
+            android:text="Beauti Camara"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_country_pink_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_View_pink_camara"
+            android:layout_alignStart="@+id/text_View_pink_camara"
+            android:layout_alignLeft="@+id/text_View_pink_camara"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="China"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="354dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1">
+
+        <TextView
+            android:id="@+id/text_View_yellow_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/image_view_yellow_camara"
+            android:layout_toRightOf="@+id/image_view_yellow_camara"
+            android:layout_weight="1"
+            android:text="Beauti Camara"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_min_yellow_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/text_view_price_yellow_camara"
+            android:layout_toRightOf="@+id/text_view_price_yellow_camara"
+            android:background="@drawable/round_button"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED"
+            android:onClick="yellow_cam_min_value"
+            />
+
+        <TextView
+            android:id="@+id/text_view_country_yellow_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_View_yellow_camara"
+            android:layout_alignStart="@+id/text_View_yellow_camara"
+            android:layout_alignLeft="@+id/text_View_yellow_camara"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="Japan"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_price_yellow_camara"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_country_yellow_camara"
+            android:layout_alignStart="@+id/text_view_country_yellow_camara"
+            android:layout_alignLeft="@+id/text_view_country_yellow_camara"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="$300"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_max_yellow_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED"
+            android:onClick="yellow_cam_max_value"
+            />
+
+        <ImageView
+            android:id="@+id/image_view_yellow_camara"
+            android:layout_width="91dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_image_view_yellow"
+            app:srcCompat="@drawable/camara_2" />
+
+        <TextView
+            android:id="@+id/text_view_qty_yellow_camara"
+            android:layout_width="39dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@+id/button_max_yellow_camara"
+            android:layout_toLeftOf="@+id/button_max_yellow_camara"
+            android:layout_toEndOf="@+id/button_min_yellow_camara"
+            android:layout_toRightOf="@+id/button_min_yellow_camara"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="354dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_blue_camara"
+            android:layout_width="91dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_image_view"
+            app:srcCompat="@drawable/camara_1" />
+
+        <TextView
+            android:id="@+id/text_view_blue_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/image_view_blue_camara"
+            android:layout_toRightOf="@+id/image_view_blue_camara"
+            android:layout_weight="1"
+            android:text="Beauti Camara"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_country_blue_camara"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_blue_camara"
+            android:layout_alignStart="@+id/text_view_blue_camara"
+            android:layout_alignLeft="@+id/text_view_blue_camara"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="China"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_price_blue_camara"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_country_blue_camara"
+            android:layout_alignStart="@+id/text_view_country_blue_camara"
+            android:layout_alignLeft="@+id/text_view_country_blue_camara"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="$250"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/button_min_blue_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/text_view_price_blue_camara"
+            android:layout_toRightOf="@+id/text_view_price_blue_camara"
+            android:background="@drawable/round_button"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED"
+            android:onClick="blue_cam_min_value"
+            />
+
+        <Button
+            android:id="@+id/button_max_blue_camara"
+            android:layout_width="42dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/round_button"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="9dp"
+            android:textStyle="bold"
+            app:backgroundTint="#EDEDED"
+            android:onClick="blue_cam_max_value"
+            />
+
+        <TextView
+            android:id="@+id/text_view_qty_blue_camara"
+            android:layout_width="39dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@+id/button_max_blue_camara"
+            android:layout_toLeftOf="@+id/button_max_blue_camara"
+            android:layout_toEndOf="@+id/button_min_blue_camara"
+            android:layout_toRightOf="@+id/button_min_blue_camara"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
